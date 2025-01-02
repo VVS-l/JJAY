@@ -1,0 +1,266 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+
+/* Container to center content */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Beat Wrapper Styling */
+.beat-wrapper {
+    display: flex;
+    gap: 20px; /* Add spacing between the beat boxes */
+}
+
+/* Beat Box Styling */
+.beat-box {
+    width: 120px;
+    height: 210px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center; /* Center content inside the beat box */
+    padding: 10px; /* Add padding for spacing */
+}
+
+/* Beat Image */
+.beat-box img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Beat Info Container */
+.beat-info {
+    margin-top: 10px; /* Space between the image and text/button */
+}
+
+/* Beat Name Styling */
+.beat-name {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 5px; /* Space between name and button */
+}
+
+/* View Button Styling */
+.view-prices {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.view-prices:hover {
+    background: #fff;
+    color: #121212;
+    box-shadow: 0 0 10px #fff;
+}
+
+/* Price and Contact Section Styling */
+.price-and-contact {
+    text-align: center;
+    margin-top: 20px;
+    opacity: 1;  /* Set opacity to 1 for visibility */
+    animation: fadeIn 1s forwards;
+}
+
+/* Separator Styling */
+.separator {
+    border: 1px solid #fff;
+    width: 80%;
+    margin: 10px auto;
+}
+
+/* Price Text Styling */
+.price {
+    color: #fff;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Contact Email Styling */
+.price-and-contact p {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.price-and-contact a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.price-and-contact a:hover {
+    color: #ccc;
+}
+
+
+/* Modal Animation */
+.details-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeInBlur 0.5s ease-out forwards;
+}
+
+.hidden {
+    display: none; 
+}
+
+/* Details Content Styling */
+.details-content {
+    background: #121212;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50px);
+    animation: slideUp 0.5s ease-out forwards;
+}
+
+
+
+/* Left and Right Sections */
+.details-left,
+.details-right {
+    flex: 1;
+    text-align: center;
+  
+}
+
+/* Vertical Line */
+.vertical-line {
+    width: 2px;
+    background: #fff;
+    height: auto;
+    margin: 0 20px;
+}
+
+/* Close Button Styling */
+.close-button {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.close-button:hover {
+    background: #fff;
+    color: #121212;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+footer p {
+    font-size: 12px;
+    font-weight: 300;
+    color: #aaa;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInBlur {
+    0% {
+        opacity: 0;
+        filter: blur(5px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Close Modal Animation */
+@keyframes fadeOutBlur {
+    0% {
+        opacity: 1;
+        filter: blur(0);
+    }
+    100% {
+        opacity: 0;
+        filter: blur(5px);
+    }
+}
+
+/* Modal content close animation */
+.details-modal.closing {
+    animation: fadeOutBlur 0.5s ease-out forwards;
+}

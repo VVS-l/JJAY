@@ -16,6 +16,19 @@ body {
     justify-content: center; /* Centers content vertically */
     align-items: center; /* Centers content horizontally */
     overflow-x: hidden;
+    overflow-y: scroll; /* Allow vertical scrolling */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer 10+ */
+}
+
+/* Hide scrollbar in Webkit-based browsers */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }
 
 /* Header styles */
@@ -159,3 +172,11 @@ body {
 body:hover .main-content, body:hover .main-content h1, body:hover .main-content p, body:hover .buttons-container {
     transform: translateZ(10px); /* Creates parallax when mouse moves */
 }
+
+/* Smooth parallax effect for text on mouse movement */
+document.addEventListener('mousemove', (e) => {
+    const mainContent = document.querySelector('.main-content');
+    const x = (window.innerWidth - e.pageX * 2) / 100;
+    const y = (window.innerHeight - e.pageY * 2) / 100;
+    mainContent.style.transform = `translate(${x}px, ${y}px)`;
+});
