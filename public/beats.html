@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/beatstyle.css">
+    <title>Find Beats</title>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="topbar">
+        <div class="logo">
+            JJAY Beats
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Beats</a>
+            <a href="#">Shop</a>
+            <a href="#">Legal</a>
+        </div>
+        <div class="icons">
+            <div class="cart">
+                <img src="https://i.ibb.co/zSWBbDG/shopping-cart-white-icon.webp" alt="Cart" class="cart-icon">
+                <span class="cart-count">0</span>
+            </div>
+            <div class="avatar">
+                <img src="https://i.ibb.co/7ys3wMZ/avatar-icon-2048x2048-ilrgk6vk.png" alt="User Avatar">
+            </div>
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Search...">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="beat-wrapper">
+            <!-- First Beat Box -->
+            <div class="beat-box">
+                <img src="https://i.ibb.co/y6ZzJx4/18a0a714ed1c0d2bd09dc4e5470459f5.jpg" alt="Beat Placeholder">
+                <div class="beat-info">
+                    <p class="beat-name">"Piano" Type Beat</p>
+                    <button class="view-prices" onclick="openDetails('piano')">View</button>
+                </div>
+            </div>
+
+            <!-- Second Beat Box -->
+            <div class="beat-box">
+                <img src="https://i.ibb.co/NVGTFTT/261926484-457968189083140-7446767231150891507-n.jpg" alt="Beat Image">
+                <div class="beat-info">
+                    <p class="beat-name">"Lil Tony" Type Beat</p>
+                    <button class="view-prices" onclick="openDetails('eb_minor')">View</button>
+                </div>
+            </div>
+
+            <!-- New Venus Beat Box -->
+            <div class="beat-box">
+                <img src="https://i.ibb.co/0fvNJFk/image-3.png" alt="Venus Type Beat">
+                <div class="beat-info">
+                    <p class="beat-name">"Venus" Type Beat</p>
+                    <button class="view-prices" onclick="openDetails('venus')">View</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Details Modals -->
+    <!-- Details Modal for Piano -->
+    <div id="details-modal-piano" class="details-modal hidden">
+        <div class="details-content">
+            <div class="details-left">
+                <img src="https://i.ibb.co/y6ZzJx4/18a0a714ed1c0d2bd09dc4e5470459f5.jpg" alt="Beat Icon">
+                <p><strong>"Piano" Type Beat</strong></p>
+                <p>Genre: Hip-Hop</p>
+
+                <!-- Separator Line -->
+                <hr class="separator">
+                
+                <!-- Price and Contact Section -->
+                <div class="price-and-contact">
+                    <div class="price">15$ mp3 lease</div>
+                    <div class="price">30$ WAV lease</div>
+                    <div class="price">120$ for exclusive</div>
+                    <p>Contact my email at <a href="mailto:bl4debusiness@gmail.com" target="_blank">bl4debusiness@gmail.com</a> to negotiate and discuss the purchase.</p>
+                </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="details-right">
+                <iframe src="https://www.youtube.com/embed/fMPYejc9xjA" allowfullscreen></iframe>
+                <p><strong>Length:</strong> 3:10</p>
+                <p><strong>BPM:</strong> 144</p>
+                <p><strong>Key:</strong> A♭ major</p>
+                <button class="close-button" onclick="closeDetails('piano')">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Details Modal for E♭ Minor -->
+    <div id="details-modal-eb_minor" class="details-modal hidden">
+        <div class="details-content">
+            <div class="details-left">
+                <img src="https://i.ibb.co/NVGTFTT/261926484-457968189083140-7446767231150891507-n.jpg" alt="Beat Icon">
+                <p><strong>"Lil Tony" Sample Type Beat</strong></p>
+                <p>Genre: Hip-Hop</p>
+
+                <!-- Separator Line -->
+                <hr class="separator">
+                
+                <!-- Price and Contact Section -->
+                <div class="price-and-contact">
+                    <div class="price">15$ mp3 lease</div>
+                    <div class="price">30$ WAV lease</div>
+                    <div class="price">120$ for exclusive</div>
+                    <p>Contact my email at <a href="mailto:bl4debusiness@gmail.com" target="_blank">bl4debusiness@gmail.com</a> to negotiate and discuss the purchase.</p>
+                </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="details-right">
+                <iframe src="https://www.youtube.com/embed/UA5Zo7Jy4gQ" allowfullscreen></iframe>
+                <p><strong>Length:</strong> 2:55</p>
+                <p><strong>BPM:</strong> 160</p>
+                <p><strong>Key:</strong> E♭ minor</p>
+                <button class="close-button" onclick="closeDetails('eb_minor')">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Details Modal for Venus -->
+    <div id="details-modal-venus" class="details-modal hidden">
+        <div class="details-content">
+            <div class="details-left">
+                <img src="https://i.ibb.co/0fvNJFk/image-3.png" alt="Beat Icon">
+                <p><strong>"Venus" Type Beat</strong></p>
+                <p>Genre: Hip-Hop</p>
+
+                <!-- Separator Line -->
+                <hr class="separator">
+                
+                <!-- Price and Contact Section -->
+                <div class="price-and-contact">
+                    <div class="price">15$ mp3 lease</div>
+                    <div class="price">30$ WAV lease</div>
+                    <div class="price">120$ for exclusive</div>
+                    <p>Contact my email at <a href="mailto:bl4debusiness@gmail.com" target="_blank">bl4debusiness@gmail.com</a> to negotiate and discuss the purchase.</p>
+                </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="details-right">
+                <iframe src="https://www.youtube.com/embed/c9MNvjoO490" allowfullscreen></iframe>
+                <p><strong>Length:</strong> 2:40</p>
+                <p><strong>BPM:</strong> 110</p>
+                <p><strong>Key:</strong> F minor</p>
+                <button class="close-button" onclick="closeDetails('venus')">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#legal">Legal</a>
+            <a href="https://instagram.com/producedby.jay" target="_blank">Instagram</a>
+            <a href="https://soundcloud.com/prod-jjay" target="_blank">SoundCloud</a>
+            <a href="https://youtube.com/@yvngchris" target="_blank">YouTube</a>
+        </div>
+        <p>&copy; 2025 JJAY Beats | All rights reserved</p>
+    </footer>
+
+    <script src="public/js/beatjs.js"></script>
+</body>
+</html>
