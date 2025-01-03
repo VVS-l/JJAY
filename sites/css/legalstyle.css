@@ -1,0 +1,178 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Top Bar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #121212;
+    border-bottom: 1px solid #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.topbar .logo {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.topbar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.topbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.topbar .nav-links a:hover {
+    color: #aaa;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.cart-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.cart-count {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.avatar img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px 10px;
+    width: 150px;
+    font-size: 14px;
+}
+
+/* Main content */
+.main-content {
+    margin-top: 70px; /* Prevents content from being hidden behind the fixed top bar */
+    padding: 20px;
+    text-align: left;
+    max-width: 800px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    flex-grow: 1;
+}
+
+.main-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.legal-text h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.legal-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.legal-text a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.legal-text a:hover {
+    color: #aaa;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+footer p {
+    font-size: 12px;
+    font-weight: 300;
+    color: #aaa;
+}
